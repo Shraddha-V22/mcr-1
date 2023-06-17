@@ -10,14 +10,14 @@ export default function Search() {
 
   return (
     <section>
-      <header className="mx-auto flex w-[80vw] gap-4 p-4">
-        <button className="text-4xl" title="Go to Home page">
-          <Link to="/">←</Link>
-        </button>
+      <header className="mx-auto flex w-[80vw] gap-4 border-b p-4">
+        <Link to="/" className="mx-auto flex w-[200px] justify-between">
+          <h1 className="text-2xl font-bold">📚BookShelf</h1>
+        </Link>
         <input
           type="text"
           placeholder="Search Book or Author"
-          className="w-full rounded-md border p-2 indent-1 outline-none"
+          className="w-full flex-grow rounded-md border p-2 indent-1 outline-none"
           value={searchText}
           onChange={(e) =>
             booksDispatch({ type: "SEARCH_BOOKS", payload: e.target.value })
