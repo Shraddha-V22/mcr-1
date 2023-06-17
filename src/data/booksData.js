@@ -85,4 +85,24 @@ export const books = [
     image: "https://m.media-amazon.com/images/I/512DQT3R3fS._SY346_.jpg",
     category: "currently reading",
   },
+  {
+    id: 10,
+    title: "Harry Potter and the Chamber of Secrets",
+    author: "J.K. Rowling",
+    publisher: "Bloomsbury UK",
+    year: 1998,
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg",
+    category: "want to read",
+  },
+  {
+    id: 11,
+    title: "Harry Potter and the Prisoner of Azkaban",
+    author: "J.K. Rowling",
+    publisher: "Bloomsbury UK",
+    year: 1999,
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/a/a0/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg",
+    category: "want to read",
+  },
 ];
