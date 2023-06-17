@@ -1,6 +1,6 @@
 export default function CategoryInput({ category, cat, catId, onChange }) {
   return (
-    <li className="flex gap-1">
+    <li className="flex gap-1 hover:bg-gray-300">
       <input
         onChange={onChange}
         className="hidden"
