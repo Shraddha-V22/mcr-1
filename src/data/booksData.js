@@ -1,0 +1,88 @@
+export const books = [
+  {
+    id: 1,
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    publisher: "HarperCollins",
+    year: 1960,
+    image:
+      "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/41j-s9fHJcL.jpg",
+    category: "want to read",
+  },
+  {
+    id: 2,
+    title: "1984",
+    author: "George Orwell",
+    publisher: "Penguin Books",
+    year: 1949,
+    image: "https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg",
+    category: "currently reading",
+  },
+  {
+    id: 3,
+    title: "The Catcher in the Rye",
+    author: "J.D. Salinger",
+    publisher: "Little, Brown and Company",
+    year: 1951,
+    image:
+      "https://tse2.mm.bing.net/th?id=OIP.oa1X04y8KuncOCHZ3ooe-AHaJm&pid=Api&P=0&h=180",
+    category: "want to read",
+  },
+  {
+    id: 4,
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    publisher: "Scribner",
+    year: 1925,
+    image: "https://m.media-amazon.com/images/I/71FTb9X6wsL.jpg",
+    category: "none",
+  },
+  {
+    id: 5,
+    title: "Brave New World",
+    author: "Aldous Huxley",
+    publisher: "Harper Perennial Modern Classics",
+    year: 1932,
+    image:
+      "https://pagdandi.org/wp-content/uploads/2021/04/Brave-New-World.jpg",
+    category: "none",
+  },
+  {
+    id: 6,
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    publisher: "Penguin Classics",
+    year: 1813,
+    image: "https://m.media-amazon.com/images/I/71Q1tPupKjL.jpg",
+    category: "already read",
+  },
+  {
+    id: 7,
+    title: "Harry Potter and the Philosopher's Stone",
+    author: "J.K. Rowling",
+    publisher: "Bloomsbury UK",
+    year: 1997,
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/6/6b/Harry_Potter_and_the_Philosopher%27s_Stone_Book_Cover.jpg",
+    category: "already read",
+  },
+  {
+    id: 8,
+    title: "A Thousand Splendid Suns",
+    author: "Khaled Hosseini",
+    publisher: "Riverhead Books",
+    year: 2007,
+    image:
+      "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655336738i/128029.jpg",
+    category: "already read",
+  },
+  {
+    id: 9,
+    title: "India, that is Bharat: Coloniality, Civilisation, Constitution",
+    author: "J Sai Deepak",
+    publisher: "Bloomsbury India",
+    year: 2021,
+    image: "https://m.media-amazon.com/images/I/512DQT3R3fS._SY346_.jpg",
+    category: "currently reading",
+  },
+];
