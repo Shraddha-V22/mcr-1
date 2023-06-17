@@ -1,11 +1,14 @@
 export default function CategoryInput({ category, cat, catId, onChange }) {
   return (
-    <li className="flex gap-1 hover:bg-gray-300">
+    <li
+      onClick={(e) => e.stopPropagation()}
+      className="flex gap-1 hover:bg-gray-300"
+    >
       <input
-        onChange={onChange}
         className="hidden"
         type="radio"
         name="category"
+        onChange={onChange}
         id={catId}
         value={cat}
       />

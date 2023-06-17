@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useBooks } from "../context/BooksProvider";
 import CategoryInput from "./CategoryInput";
+import { useEffect } from "react";
 
 export default function Book({ book }) {
   const { booksDispatch } = useBooks();
@@ -8,9 +9,21 @@ export default function Book({ book }) {
   const { id, image, title, author, category } = book;
 
   const changeCategoryHandler = (e, id) => {
+    e.stopPropagation();
     const { value } = e.target;
     booksDispatch({ type: "CHANGE_CATEGORY", payload: { value, id } });
   };
+
+  useEffect(() => {
+    showCategories &&
+      document.body.addEventListener("click", () => setShowCategories(false));
+
+    return () =>
+      showCategories &&
+      document.body.removeEventListener("click", () =>
+        setShowCategories(false)
+      );
+  }, [showCategories]);
 
   return (
     <section className="flex w-[200px] flex-col gap-1">
@@ -23,7 +36,10 @@ export default function Book({ book }) {
         />
         <div className="">
           <div
-            onClick={() => setShowCategories((prev) => !prev)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowCategories((prev) => !prev);
+            }}
             className="absolute -bottom-3 -right-3 grid h-12 w-12 cursor-pointer place-items-center rounded-full bg-green-700 text-sm text-white"
           >
             ▼
