@@ -1,8 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+import Search from "./pages/Search";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="ml-4 flex h-24 border-2 border-gray-300 p-3 text-gray-700 underline shadow-md">
-      Tailwind setup
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/search" element={<Search />} />
+    </Routes>
   );
 }
 
